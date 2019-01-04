@@ -42,12 +42,44 @@ RUN dnf upgrade -y \
   && dnf clean all
 
 # Install Robot Framework and Selenium Library
-RUN pip install \
+ RUN pip install \
   robotframework==$ROBOT_FRAMEWORK_VERSION \
   robotframework-faker==$FAKER_VERSION \
   robotframework-pabot==$PABOT_VERSION \
-  robotframework-requests==$REQUESTS_VERSION \
-  robotframework-seleniumlibrary==$SELENIUM_LIBRARY_VERSION
+  RequestsLibrary== \
+  asn1crypto==0.24.0\
+  beautifulsoup4==4.6.3\
+  certifi==2018.8.24\
+  cffi==1.11.5\
+  chardet==3.0.4\
+  cryptography==2.3.1\
+  datetime==4.2\
+  enum34==1.1.6\
+  idna==2.7\
+  ipaddress==1.0.22\
+  jsonpatch==1.23\
+  jsonpointer==2.0\
+  pip==18.0\
+  pycparser==2.18\
+  pymysql==0.9.2\
+  pytz==2018.5\
+  PyYAML==3.13\
+  requests==2.19.1\
+  robotframework-databaselibrary==1.0.1\
+  robotframework-httplibrary==0.4.2\
+  robotframework-requests==0.4.8\
+  robotframework-ride==1.5.2.1\
+  robotframework-selenium2library==3.0.0\
+  robotframework-seleniumlibrary==3.1.1\
+  robotframework-yamllibrary==0.2.8\
+  selenium==3.14.0\
+  setuptools==28.8.0\
+  six==1.11.0\
+  urllib3==1.23\
+  waitress==1.1.0\
+  webob==1.8.2\
+  webtest==2.0.30\
+  zope.interface==4.5.0
 
 # Download Gecko drivers directly from the GitHub repository
 RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/$GECKO_DRIVER_VERSION/geckodriver-$GECKO_DRIVER_VERSION-linux64.tar.gz" \
