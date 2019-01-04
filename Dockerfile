@@ -46,7 +46,6 @@ RUN dnf upgrade -y \
   robotframework==$ROBOT_FRAMEWORK_VERSION \
   robotframework-faker==$FAKER_VERSION \
   robotframework-pabot==$PABOT_VERSION \
-  RequestsLibrary== \
   asn1crypto==0.24.0\
   beautifulsoup4==4.6.3\
   certifi==2018.8.24\
