@@ -31,9 +31,9 @@ ENV XVFB_VERSION 1.20.*
 # Install system dependencies
 RUN dnf upgrade -y \
   && dnf install -y \
-    chromedriver-$CHROMIUM_VERSION \
-    chromium-$CHROMIUM_VERSION \
-    firefox-$FIREFOX_VERSION \
+#     chromedriver-$CHROMIUM_VERSION \
+#     chromium-$CHROMIUM_VERSION \
+#     firefox-$FIREFOX_VERSION \
     python2-pip-$PYTHON_PIP_VERSION \
     xauth \
     xorg-x11-server-Xvfb-$XVFB_VERSION \
