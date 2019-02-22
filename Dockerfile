@@ -66,7 +66,7 @@ RUN dnf upgrade -y \
   requests==2.19.1\
   robotframework-databaselibrary==1.0.1\
   robotframework-httplibrary==0.4.2\
-  robotframework-requests==0.4.8\
+  robotframework-requests==0.5.0\
   robotframework-ride==1.5.2.1\
   robotframework-selenium2library==3.0.0\
   robotframework-seleniumlibrary==3.1.1\
